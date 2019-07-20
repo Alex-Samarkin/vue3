@@ -10,7 +10,10 @@
     <hr />
     <div id="app">
       <ol>
-        <li v-for="person in persons">{{ person.fio }}</li>
+        <li v-for="person in persons">
+          {{ person.fio }}, возраст {{ person.age }} лет, пол
+          {{ person.gender }}
+        </li>
       </ol>
     </div>
     <hr />
