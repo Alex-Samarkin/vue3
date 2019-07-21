@@ -11,25 +11,26 @@
     <div id="app">
       <ul>
         <li v-for="person in persons">
-          {{ person.fio }}, возраст {{ person.age }} лет, пол
+          Код: {{ person.id }} ФИО: {{ person.fio }}, возраст
+          {{ person.age }} лет, пол
           {{ person.gender }}
         </li>
       </ul>
+      <table border="2px" width="90%">
+        <thead id="header1">
+          <td>Код</td>
+          <td>ФИО</td>
+          <td>Возраст</td>
+          <td>Пол</td>
+        </thead>
+        <tr>
+          <td>Код</td>
+          <td>ФИО</td>
+          <td>Возраст</td>
+          <td>Пол</td>
+        </tr>
+      </table>
     </div>
-    <table border="2px" width="90%">
-      <thead id="header1">
-        <td>Код</td>
-        <td>ФИО</td>
-        <td>Возраст</td>
-        <td>Пол</td>
-      </thead>
-      <tr>
-        <td>Код</td>
-        <td>ФИО</td>
-        <td>Возраст</td>
-        <td>Пол</td>
-      </tr>
-    </table>
 
     <hr />
     <script src="index.js"></script>
