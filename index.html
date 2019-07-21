@@ -18,10 +18,10 @@
       </ul>
       <table border="2px" width="90%">
         <thead id="header1">
-          <td>Код</td>
-          <td>ФИО</td>
-          <td>Возраст</td>
-          <td>Пол</td>
+          <td>{{ person.id }}</td>
+          <td>{{ person.fio }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.gender }}</td>
         </thead>
         <tr v-for="person in persons">
           <td>{{ person.id }}</td>

@@ -1,6 +1,12 @@
 var app = new Vue({
   el: "#app",
   data: {
+    person: {
+      id: "код записи",
+      fio: "Фамилия, имя и отчество",
+      gender: "Пол пациента",
+      age: "Возраст"
+    },
     persons: [
       {
         id: 1,
