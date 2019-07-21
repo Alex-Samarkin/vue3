@@ -23,11 +23,11 @@
           <td>Возраст</td>
           <td>Пол</td>
         </thead>
-        <tr>
-          <td>Код</td>
-          <td>ФИО</td>
-          <td>Возраст</td>
-          <td>Пол</td>
+        <tr v-for="person in persons">
+          <td>{{ person.id }}</td>
+          <td>{{ person.fio }}</td>
+          <td>{{ person.age }}</td>
+          <td>{{ person.gender }}</td>
         </tr>
       </table>
     </div>
